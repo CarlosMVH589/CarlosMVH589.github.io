@@ -1,0 +1,8 @@
+<section class="mb-4">
+  <h2 class="section-title">Certificates</h2>
+  <div *ngFor="let cert of certsList" class="mb-3">
+    <h3 class="item-title" style="font-size: 0.95rem;">{{ cert.title }}</h3>
+    <div class="small fw-bold text-success">{{ cert.institution }}</div>
+    <div class="item-meta" style="font-size: 0.8rem;">{{ cert.year }}</div>
+  </div>
+</section>

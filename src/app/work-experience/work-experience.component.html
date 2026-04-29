@@ -1,0 +1,9 @@
+<h2 class="section-title">Work Experience</h2>
+<div class="job-item" *ngFor="let work of workList">
+  <div class="item-header">
+    <h3 class="item-title">{{ work.position }}</h3>
+    <div class="item-meta">{{ work.startDate }} — {{ work.endDate }}</div>
+  </div>
+  <div class="item-subtitle">{{ work.company }}</div>
+  <p class="item-description">{{ work.accomplishments }}</p>
+</div>

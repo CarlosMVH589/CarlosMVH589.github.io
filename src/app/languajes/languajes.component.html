@@ -1,0 +1,7 @@
+<h2 class="section-title">Idiomas</h2>
+<div *ngFor="let lang of languagesList" class="mb-3">
+  <div class="d-flex justify-content-between align-items-center p-2 rounded border bg-white">
+    <span class="fw-bold"><i class="bi bi-translate me-2 text-success"></i>{{ lang.language }}</span>
+    <span class="badge bg-dark">{{ lang.level }}</span>
+  </div>
+</div>

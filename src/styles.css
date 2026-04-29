@@ -1,1 +1,122 @@
-/* You can add global styles to this file, and also import other style files */
+/* --- CONFIGURACIÓN DE PÁGINA (LA HOJA) --- */
+body {
+  background-color: #d1d4d7;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  padding: 20px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cv-paper {
+  width: 900px; 
+  min-height: 98vh; /* Altura de la hoja casi total */
+  background: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  overflow: hidden; /* Evita que el contenido se salga de la hoja */
+}
+
+.cv-body {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr; /* Columna izquierda más ancha */
+  gap: 35px;
+  padding: 15px 45px;
+  flex: 1;
+}
+
+/* --- ESTILOS DE LOS APARTADOS (TÍTULOS) --- */
+.section-title, h2 {
+  font-size: 1.35rem !important;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #2c3e50;
+  border-bottom: 3.5px solid #2ecc71; /* Línea verde */
+  display: inline-block;
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+  padding-bottom: 3px;
+  letter-spacing: 1px;
+}
+
+/* --- ESTILOS DE ÍTEMS INTERNOS --- */
+.item-title, h3 {
+  font-size: 1.15rem !important;
+  font-weight: 700;
+  margin: 0 !important;
+  color: #000;
+}
+
+.item-subtitle {
+  color: #2ecc71;
+  font-weight: 600;
+  font-size: 1rem !important;
+  margin-bottom: 4px;
+}
+
+.item-description, p {
+  font-size: 0.95rem !important;
+  line-height: 1.25 !important;
+  color: #444;
+  text-align: justify;
+  margin-bottom: 10px !important;
+}
+
+/* --- COLUMNA DERECHA (SKILLS, TAGS, ETC) --- */
+.skill-bar-container {
+  margin-bottom: 12px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.skill-progress-bg {
+  width: 100%;
+  height: 8px;
+  background-color: #eee;
+  margin-top: 5px;
+}
+
+.skill-progress-fill {
+  height: 100%;
+  background-color: #2ecc71;
+}
+
+/* Etiquetas (Intereses/Certificados) */
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag-item {
+  background-color: #2c3e50;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* --- COMPACTADOR FINAL --- */
+section {
+  margin-bottom: 25px !important;
+}
+
+/* Forzar que no haya scrollbars internos visibles */
+.left-col, .right-col {
+  overflow: visible;
+}
+
+/* Iconos de Bootstrap */
+i {
+  margin-right: 5px;
+  color: #2ecc71;
+}

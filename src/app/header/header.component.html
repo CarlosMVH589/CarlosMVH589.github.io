@@ -1,0 +1,28 @@
+<header class="header-banner-slim">
+  <div class="container-fluid px-4">
+    <div class="header-grid">
+      
+      <div class="photo-column">
+        <div class="profile-frame-slim">
+          <img [src]="header.photoUrl" class="profile-img" alt="Perfil">
+        </div>
+      </div>
+
+      <div class="info-column">
+        <div class="name-section">
+          <h1 class="fw-black text-white text-uppercase m-0">{{ header.name }}</h1>
+          <p class="goal-text">{{ header.goalLife }}</p>
+        </div>
+        
+        <div class="contact-grid text-white">
+          <span><i class="bi bi-geo-alt-fill text-success"></i> {{ header.location }}</span>
+          <span class="fw-bold mx-3">|</span>
+          <span><i class="bi bi-envelope-fill text-success"></i> {{ header.email }}</span>
+          <span class="fw-bold mx-3">|</span>
+          <span><i class="bi bi-link-45deg text-success"></i> {{ header.socialNetwork }}</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>

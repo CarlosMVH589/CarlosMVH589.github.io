@@ -3,14 +3,37 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { WorkExperienceComponent } from './work-experience/work-experience.component';
+import { EducationComponent } from './education/education.component';
+import { SkillsComponent } from './skills/skills.component';
+import { CertificatesComponent } from './certificates/certificates.component';
+import { LanguajesComponent } from './languajes/languajes.component';
+import { InterestsComponent } from './interests/interests.component';
+
+// Firebase
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    WorkExperienceComponent,
+    EducationComponent,
+    SkillsComponent,
+    CertificatesComponent,
+    LanguajesComponent,
+    InterestsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // Inicialización de Firebase
+    AngularFireModule.initializeApp(environment.firebase),
+    // Módulo necesario para usar Firestore en tus servicios
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
