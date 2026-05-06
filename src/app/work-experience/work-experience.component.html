@@ -5,5 +5,11 @@
     <div class="item-meta">{{ work.startDate }} — {{ work.endDate }}</div>
   </div>
   <div class="item-subtitle">{{ work.company }}</div>
-  <p class="item-description">{{ work.accomplishments }}</p>
+  
+  <!-- Cambia el <p> por una lista para los logros -->
+  <ul class="item-description">
+    <li *ngFor="let achievement of work.accomplishments">
+      {{ achievement }}
+    </li>
+  </ul>
 </div>

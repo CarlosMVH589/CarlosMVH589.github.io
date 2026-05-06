@@ -4,5 +4,5 @@ export class WorkExperience {
   startDate?: string;
   endDate?: string;
   location?: string;
-  accomplishments?: string;
+  accomplishments?: string[];
 }
